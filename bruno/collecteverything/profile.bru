@@ -1,0 +1,17 @@
+meta {
+  name: profile
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:85/api/user/profile
+  body: json
+  auth: bearer
+}
+
+body:json {
+  {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmljdG9yIiwiZW1haWwiOiJ2aWN0b3Iua3J1cGthQG9yYW5nZS5mciIsImlkIjoiNjc5M2I0OTdjZGJkZTA4NWZlMjZjMjdhIiwiaWF0IjoxNzM5OTc0NjI0LCJleHAiOjE3NDAwNjEwMjR9.L8Hty7IT73wAtue_gFkRS8KzAO_ovgPJWz10l--7tOQ"
+  }
+}
